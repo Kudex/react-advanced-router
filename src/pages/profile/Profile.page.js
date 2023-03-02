@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./profile.module.css";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation} from "react-router-dom";
 const ProfilePage = () => {
   const location = useLocation();
- const params = useParams();
+
 
   return (
     <div className={styles["container"]}>
