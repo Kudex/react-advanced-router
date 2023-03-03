@@ -13,13 +13,13 @@ import SettingsPage from "../pages/settings/Settings.page";
 import ProfilePage from "../pages/profile/Profile.page";
 import UserSingle from "../pages/user-single/UserSingle";
 
-const MyOwnPage = ()=>{
-  return(
-<div>
-  <h1>It's my page</h1>
-</div>
+const MyOwnPage = () => {
+  return (
+    <div>
+      <h1>It's my page</h1>
+    </div>
   );
-}
+};
 
 // export const appRoutes = [
 //   {
@@ -77,11 +77,11 @@ const Routes = () => {
         {Object.values(appRoutes).map(({ id, path, element }) => (
           <Route key={id} path={path} element={element} />
         ))}
-        <Route path="*" element={<NoPages/>}/>
-        <Route path="/user">
-            <Route path="me" element={<MyOwnPage/>}/>
-            <Route path=":userId" element={<UserSingle/>}/>
+        <Route path="*" element={<NoPages />} />
+        <Route path="/users">
+          <Route path="me" element={<MyOwnPage />} />
 
+          <Route path=":userId" element={<UserSingle />} />
         </Route>
       </ReactRouterRoutes>
     </div>

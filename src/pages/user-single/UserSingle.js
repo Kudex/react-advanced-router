@@ -4,7 +4,7 @@ const UserSingle = () => {
     const {userId} = useParams();
     return (
         <div>
-            Current user id is {userId}:
+            Current user id is: {userId}:
         </div>
     );
 };
